@@ -1,0 +1,37 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+html,
+body {
+    scroll-behavior: smooth;
+    width: 100%;
+    max-width: $max-width;
+    -webkit-font-smoothing: antialiased;
+    margin: auto;
+    @include text($fz-text, "fmain", $lh-text, $text-cl, none);
+    background: white;
+    position: relative;
+    --pdSection: 80px;
+    .mainwrapper {
+        width: 100%;
+        margin: auto;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    .pdsection {
+        padding: var(--pdSection) 0;
+    }
+    @include tablet {
+    }
+    @include mobile {
+    }
+    @include mobile-xxs {
+    }
+}
